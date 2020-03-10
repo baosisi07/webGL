@@ -1,0 +1,23 @@
+{
+    "plugins": [
+      "transform-runtime",
+      ["transform-gl-matrix", {
+        "glMatrixArray": false
+      }]
+    ],
+    "presets": [
+      "es2015",
+      "react",
+      ["env",
+        {
+          "targets": {
+            "browsers": [
+              "> 1%",
+              "last 2 versions",
+              "not ie <= 8"
+            ]
+          }
+        }
+      ]
+    ]
+  }
